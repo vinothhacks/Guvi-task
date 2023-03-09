@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="container login-box">
+		<p>Register</p>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+					<div class="user-box form-group">
+						<input required="" type="text" name="name" class="form-control">
+						<label>Name</label>
+					</div>
+					<div class="user-box form-group">
+						<input required="" type="text" name="email"class="tb form-control">
+						<label>Email</label>
+					</div>
+					<div class="user-box form-group">
+						<input required="" type="password" name="password" class="form-control">
+						<label>Password</label>
+					</div>
+					<div class="form-group">
+						<button type="submit">
+							<span class="box">
+								Register
+							</span>
+						</button>					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/register.js"></script>
+</body>
+</html>

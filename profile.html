@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+	<div class="login-box container">
+		<p>Profile</p>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+					<div class="user-box form-group">
+						<input class="tb" required="" type="number" name="age" class="form-control">
+						<label>Age</label>
+					</div>
+					<div class="user-box form-group">
+						<input required="" type="date" name="dob" class="form-control">
+						
+					</div>
+					<div class="user-box form-group">
+						<input class="tb" required="" type="tel" name="contact" class="form-control">
+						<label>Contact No</label>
+					</div>
+					<br>
+					<br>
+					<div class="form-group">
+						<button type="submit">
+							<span class="box">
+								Update
+							</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/profile.js"></script>
+</body>
+</html>

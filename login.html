@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css\login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="login-box">
+    <p>Login</p>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+      <div class="user-box form-group">
+        <input required="" type="text" name="email" id="email" class="tb">
+        <label>Email</label>
+      </div>
+      <div class="user-box form-group">
+        <input required="" type="password" name="Password" id="pwd1" class="tb" >
+        <label>Password</label>
+      </div>
+      <a type="submit" class="btn" onClick="login()" type="submit" name="submit" value="Submit">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+      <br>
+      <br>
+    <p>Don't have an account?</p>
+    <a class="btn a1" name="sign in" href="register.html" value="Submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Sign up
+    </a>
+  </div>  
+</body>
+<script src="js\login.js">
+</script>
+</html>
